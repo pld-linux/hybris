@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 make install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	sysdir=%{_applnkdir}/Applications
+	sysdir=%{_applnkdir}/Office/Misc
 
 gzip -9nf ChangeLog AUTHORS NEWS README TODO
 
@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Applications/*
+%{_applnkdir}/Office/Misc/*
