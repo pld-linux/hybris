@@ -1,4 +1,5 @@
 Summary:	Hybris is an outline management software
+Summary(pl):	Program do zarz±dzania uk³adem dokumentów
 Name:		hybris
 Version:	0.5.2
 Release:	0
@@ -16,6 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Hybris is an outline management software, aiming to become a
 structured document editor. It is well modularized, lightweight,
 easily portable.
+
+%description -l pl
+Hybris to oprogramowanie umo¿liwiaj±ce strukturaln± edycjê dokumentów.
+Jest lekkie, modu³owe i mo¿na je ³atwo pzrenosiæ na inne platformy.
 
 %prep
 %setup -q
