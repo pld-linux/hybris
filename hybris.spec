@@ -5,6 +5,7 @@ Version:	0.5.2
 Release:	2
 License:	GPL
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://hybris.netpedia.net/src/%{name}-%{version}.tar.gz
 URL:		http://hybris.netpedia.net/
@@ -26,7 +27,7 @@ Jest lekkie, modu³owe i mo¿na je ³atwo pzrenosiæ na inne platformy.
 %setup -q
 
 %build
-%{__make} OPTS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
+%{__make} OPTS="%{rpmcflags} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
