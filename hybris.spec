@@ -7,8 +7,7 @@ Group:		X11/Applications
 Group(pl):	X11/Aplikacje
 Source0:	http://hybris.netpedia.net/src/%{name}-%{version}.tar.gz
 URL:		http://hybris.netpedia.net/
-BuildRequires:	gnome-libs-devel
-BuildRequires:	libxml-devel
+BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
