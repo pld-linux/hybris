@@ -10,7 +10,6 @@ URL:		http://hybris.netpedia.net/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 Hybris is an outline management software, aiming to become a
