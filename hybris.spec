@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://hybris.netpedia.net/src/%{name}-%{version}.tar.gz
+# Source0-md5:	d1e1de14938f52bed612fff9ccbb73de
 URL:		http://hybris.netpedia.net/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
