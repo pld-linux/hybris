@@ -13,7 +13,6 @@ BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
-%define		_sysconfigdir	/etc/X11/GNOME
 
 %description
 Hybris is an outline management software, aiming to become a structured
