@@ -7,7 +7,6 @@ Group:		X11/Applications
 Group(pl):	X11/Aplikacje
 Source0:	http://hybris.netpedia.net/src/%{name}-%{version}.tar.gz
 URL:		http://hybris.netpedia.net/
-BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,10 +22,7 @@ easily portable.
 %setup -q
 
 %build
-gettextize --copy --force
-LDFLAGS="-s"; export LDFLAGS
-%configure
-make
+make OPTS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -37,12 +33,10 @@ make install \
 
 gzip -9nf ChangeLog AUTHORS NEWS README TODO
 
-%find_lang %{name} --with-gnome
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
