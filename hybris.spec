@@ -34,13 +34,11 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Office/Misc
 
-gzip -9nf ChangeLog AUTHORS NEWS README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Office/Misc/*
