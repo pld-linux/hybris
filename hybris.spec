@@ -21,12 +21,12 @@ easily portable.
 %setup -q
 
 %build
-make OPTS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
+%{__make} OPTS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Office/Misc
 
