@@ -15,8 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-Hybris is an outline management software, aiming to become a structured
-document editor. It is well modularized, lightweight, easily portable.
+Hybris is an outline management software, aiming to become a
+structured document editor. It is well modularized, lightweight,
+easily portable.
 
 %prep
 %setup -q
