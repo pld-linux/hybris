@@ -18,7 +18,7 @@ easily portable.
 
 %description -l pl
 Hybris to oprogramowanie umo¿liwiaj±ce strukturaln± edycjê dokumentów.
-Jest lekkie, modu³owe i mo¿na je ³atwo pzrenosiæ na inne platformy.
+Jest lekkie, modu³owe i mo¿na je ³atwo przenosiæ na inne platformy.
 
 %prep
 %setup -q
