@@ -1,5 +1,5 @@
 Summary:	Hybris is an outline management software
-Summary(pl.UTF-8):   Program do zarządzania układem dokumentów
+Summary(pl.UTF-8):	Program do zarządzania układem dokumentów
 Name:		hybris
 Version:	0.5.2
 Release:	2
